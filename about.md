@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: Applications:
 permalink: /about/
 ---
-
-## Applications:
 
 [eBookBuddy](https://github.com/TheWicklowWolf/eBookBuddy): Book Discovery Tool  
 
