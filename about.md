@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Applications:
+title: Applications
 permalink: /about/
 ---
 
