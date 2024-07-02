@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello!
+title: THE BLOG IS LIVE!
 ---
 
-Hello World markdown file.
+Welcome!!!
