@@ -1,25 +1,29 @@
 ---
 layout: post
-title: Readarr and AudioBookShelf (without Calibre)
+title: Readarr and AudioBookShelf Integration (Without Calibre)
 ---
 
 
 ## Readarr 
 
-Setup Readarr to use `/data/media/books` as it's root folder
+Setup Readarr to use `/data/media/books` as it's root folder.
 
 
 ## AudioBookShelf (ABS)
 
-Setup ABS to use `/data/media/abs` as it's books folder
+Setup ABS to use `/data/media/abs` as it's books folder.
 
 
-# Link the two 
-Use https://github.com/TheWicklowWolf/ConvertBooks to create MOBI, EPUB and AZW3 versions of your books.
+# Linking Readarr and AudioBookShelf
+To seamlessly convert and link your ebooks from Readarr to ABS, you can use a tool called ConvertBooks. This tool can convert your ebooks into multiple formats such as MOBI, EPUB, and AZW3.
+See [https://github.com/TheWicklowWolf/ConvertBooks](https://github.com/TheWicklowWolf/ConvertBooks).
 
-        environment:
-          - desired_output_formats=.mobi,.epub,.azw3
-        volumes:      
-          - /data/media/books:/convertbooks/source:ro
-          - /data/media/abs:/convertbooks/destination
+    environment:
+      - desired_output_formats=.mobi,.epub,.azw3
+    volumes:      
+      - /data/media/books:/convertbooks/source:ro
+      - /data/media/abs:/convertbooks/destination
 
+
+# Conclusion
+By setting up Readarr and AudioBookShelf as described, you ensure your ebook collection is well-organized and accessible in multiple formats without needing Calibre.
