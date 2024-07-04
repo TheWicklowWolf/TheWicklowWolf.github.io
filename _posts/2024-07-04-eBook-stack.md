@@ -74,24 +74,35 @@ By following this setup, your ebook collection will be well organized and easily
 
 ```yaml
 services:
+  readarr:
+    image: lscr.io/linuxserver/readarr:develop
+    container_name: readarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /path_to_config/readarr:/config
+      - /data/media/ebooks:/data/media/ebooks
+    ports:
+      - xxxx:8787
+    restart: unless-stopped
+
  audiobookshelf:
     image: ghcr.io/advplyr/audiobookshelf:latest
     container_name: audiobookshelf
-    ports:
-      - xxxx:80
     volumes:
       - /data/media/abs_books:/books
       - /data/media/audiobooks:/audiobooks
       - /data/media/podcasts:/podcasts
       - /path_to_config/audiobooks:/config
       - /path_to_config/audiobooks/metadata:/metadata
+    ports:
+      - xxxx:80
     restart: unless-stopped
   
   bookbounty:
     image: thewicklowwolf/bookbounty:latest
     container_name: bookbounty
-    ports:
-      - xxxx:5000
     environment:
       - selected_path_type=folder
       - library_scan_on_completion=True
@@ -99,19 +110,21 @@ services:
       - /data/media/ebooks:/bookbounty/downloads
       - /path_to_config/bookbounty:/bookbounty/config
       - /etc/localtime:/etc/localtime:ro
+    ports:
+      - xxxx:5000
     restart: unless-stopped
     
   ebookbuddy:
     image: thewicklowwolf/ebookbuddy:latest
     container_name: ebookbuddy
-    ports:
-      - xxxx:5000
     environment:
       - auto_start=True
       - search_for_missing_book=True
     volumes:
       - /path_to_config/ebookbuddy:/ebookbuddy/config
       - /etc/localtime:/etc/localtime:ro
+    ports:
+      - xxxx:5000
     restart: unless-stopped
   
   convertbooks:
