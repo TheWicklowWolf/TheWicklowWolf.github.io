@@ -6,7 +6,7 @@ title: Full eBook Stack
 ![eBook-Stack]({{ site.baseurl }}/images/ebook-stack.png "eBook Stack")
 
 
-# Services:
+## Services:
 
 - **Readarr** - used for structure, file names, and metadata.
 - **eBookBuddy** - used for discovering new books.
@@ -14,7 +14,7 @@ title: Full eBook Stack
 - **ConvertBooks** - used for book conversions.
 - **AudioBookShelf (ABS)** - used as book server.
 	
-# Folder Structure
+## Folder Structure
 
 `/data/media/abs_books` -> Used for ABS book library.
 
@@ -64,12 +64,12 @@ See [https://github.com/TheWicklowWolf/ConvertBooks](https://github.com/TheWickl
 Use `/data/media/abs_books` as its books folder.
 
 
-# Conclusion
+## Conclusion
 Did you notice that there are no Calibre or Calibre-web containers used in this setup? 
 Instead, ABS is utilized, offering each book in multiple formats and including a convenient "send to Kindle" feature.  
 By following this setup, your ebook collection will be well organized and easily accessible in various formats, eliminating the need for the full Calibre application.
 
-# Example YAML Configuration
+## Example YAML Configuration
 
 ```yaml
 services:
