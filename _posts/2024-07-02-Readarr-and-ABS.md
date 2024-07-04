@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Readarr and AudioBookShelf Integration _(Without Calibre)_
+title: Readarr and AudioBookShelf Integration (Without Calibre)
 ---
 
 
