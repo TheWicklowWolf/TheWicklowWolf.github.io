@@ -4,7 +4,7 @@ title: Full eBook Stack
 ---
 
 
-## Services:
+# Services:
 
 - **Readarr** - used for structure, file names, and metadata.
 - **eBookBuddy** - used for discovering new books.
@@ -12,7 +12,7 @@ title: Full eBook Stack
 - **ConvertBooks** - used for book conversions.
 - **AudioBookShelf (ABS)** - used as book server.
 	
-## Folder Structure
+# Folder Structure
 
 `/data/media/abs_books` -> Used for ABS book library.
 
@@ -25,7 +25,7 @@ In Settings -> Media Management -> Book Naming -> Standard book format ->
 
 `{Book Series}/{Book SeriesPosition - }{Book Title} {(Release Year)}/{Book SeriesPosition - }{Book Series - }{Author Name} - {Book Title}{ (Release Year)}{ (PartNumber)}`
 
-In this section I also have Rename Books ticked and Replace Illegal Characters ticked.
+In this section Rename Books is ticked and Replace Illegal Characters is ticked.
 
 
 ## eBookBuddy
@@ -39,9 +39,10 @@ The downloads folder can be mapped directly to the Readarr root folder:
 `/data/media/ebooks:/bookbounty/downloads`
 
 This will attempt to create the correct folder structure (/author/book etc.) and will download books into their respective folders.
-Note: Readarr doesn't automatically rename the files after import and matching may not be perfect. 
-So it is reccommend to check for unmapped files and to also rename files if required
 
+> Note: Readarr does not automatically rename files after import, and matching may not be perfect. 
+> It's recommended to review for unmapped files and use manual import where necessary.
+> After importing, you can rename books using Readarr's file rename function if needed.
 
 ## ConvertBooks
 
@@ -56,28 +57,28 @@ See [https://github.com/TheWicklowWolf/ConvertBooks](https://github.com/TheWickl
       - /data/media/abs_books:/convertbooks/destination
 ```
 
-# AudioBookShelf (ABS)
+## AudioBookShelf (ABS)
 
 Use `/data/media/abs_books` as its books folder.
 
 
-## Conclusion
-Notice there is no Calibre or Calibre-web containers? 
-Instead, ABS is utilized, offering each book in multiple formats and including a convenient "send to Kindle" feature. 
-By following this setup, you guarantee your ebook collection is meticulously organized and easily accessible in various formats, eliminating the need for the Calibre application.
+# Conclusion
+Did you notice that there are no Calibre or Calibre-web containers used in this setup? 
+Instead, ABS is utilized, offering each book in multiple formats and including a convenient "send to Kindle" feature.  
+By following this setup, your ebook collection will be well organized and easily accessible in various formats, eliminating the need for the full Calibre application.
 
-## Example YAML Configuration
+# Example YAML Configuration
 
 ```yaml
 services:
  audiobookshelf:
     image: ghcr.io/advplyr/audiobookshelf:latest
     container_name: audiobookshelf
-	ports:
+    ports:
       - xxxx:80
     volumes:
       - /data/media/abs_books:/books
-	  - /data/media/audiobooks:/audiobooks
+      - /data/media/audiobooks:/audiobooks
       - /data/media/podcasts:/podcasts
       - /path_to_config/audiobooks:/config
       - /path_to_config/audiobooks/metadata:/metadata
@@ -86,7 +87,7 @@ services:
   bookbounty:
     image: thewicklowwolf/bookbounty:latest
     container_name: bookbounty
-	ports:
+    ports:
       - xxxx:5000
     environment:
       - selected_path_type=folder
@@ -100,7 +101,7 @@ services:
   ebookbuddy:
     image: thewicklowwolf/ebookbuddy:latest
     container_name: ebookbuddy
-	ports:
+    ports:
       - xxxx:5000
     environment:
       - auto_start=True
@@ -113,7 +114,7 @@ services:
   convertbooks:
     image: thewicklowwolf/convertbooks:latest
     container_name: convertbooks
-	environment:
+    environment:
       - desired_output_formats=.mobi,.epub,.azw3
       - schedule=1 # Run at 1 AM
       - run_at_startup=False
