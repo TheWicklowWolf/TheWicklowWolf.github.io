@@ -3,6 +3,8 @@ layout: post
 title: Full eBook Stack
 ---
 
+![eBook-Stack]({{ site.baseurl }}/images/ebook-stack.png "eBook Stack")
+
 
 # Services:
 
