@@ -42,9 +42,10 @@ The downloads folder can be mapped directly to the Readarr root folder:
 
 This will attempt to create the correct folder structure (/author/book etc.) and will download books into their respective folders.
 
-> Note: Readarr does not automatically rename files after import, and matching may not be perfect. 
-> It's recommended to review for unmapped files and use manual import where necessary.
-> After importing, you can rename books using Readarr's file rename function if needed.
+Note:
+> Readarr does not automatically rename files after import, and matching may not be perfect.  
+> It's recommended to review for unmapped files and use manual import where necessary.  
+> After importing, you can rename books using Readarr's file rename function if needed.  
 
 ## ConvertBooks
 
@@ -65,9 +66,9 @@ Use `/data/media/abs_books` as its books folder.
 
 
 ## Conclusion
-Did you notice that there are no Calibre or Calibre-web containers used in this setup? 
-Instead, ABS is utilized, offering each book in multiple formats and including a convenient "send to Kindle" feature.  
-By following this setup, your ebook collection will be well organized and easily accessible in various formats, eliminating the need for the full Calibre application.
+Did you notice that there are no Calibre or Calibre-web containers used in this setup?  
+Instead, ABS is utilized, offering each book in multiple formats and including a convenient "send to Kindle" feature.   
+By following this setup, your ebook collection will be well organized and easily accessible in various formats, eliminating the need for the full Calibre application.  
 
 ## Example YAML Configuration
 
@@ -127,3 +128,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
 ```
+
+
+---
