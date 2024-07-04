@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Readarr and AudioBookShelf Integration (Without Calibre)
+title: Readarr and AudioBookShelf Integration _(Without Calibre)_
 ---
 
 
 ## Readarr 
 
-Setup Readarr to use `/data/media/books` as it's root folder.
+Setup Readarr to use `/data/media/ebooks` as it's root folder.
 
 
 ## AudioBookShelf (ABS)
 
-Setup ABS to use `/data/media/abs` as it's books folder.
+Setup ABS to use `/data/media/abs_books` as it's books folder.
 
 
 # Linking Readarr and AudioBookShelf
