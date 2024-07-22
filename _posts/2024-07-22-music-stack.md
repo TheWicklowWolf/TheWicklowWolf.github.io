@@ -8,7 +8,7 @@ title: Full Music Stack
 
 ## Services:
 
-- **Lidarr** - used for structure, file names, and metadata.
+- **Lidarr** - used for structure, file names and metadata.
 - **LidaTube** - used for retrieving albums.
 - **Lidify** - used for discovering new artists.
 - **Syncify** - used for retrieving singles from playlists.
