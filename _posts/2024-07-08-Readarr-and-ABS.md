@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Readarr and AudioBookShelf Integration (Without Calibre)
+title: Readarr and AudioBookShelf Integration (with multiple formats for each eBook)
 ---
 
+> This approach is ideal if you prefer not to use Calibre or Calibre Web but still want to manage multiple versions of each eBook.
 
 ## Readarr 
 
@@ -21,8 +22,8 @@ See [https://github.com/TheWicklowWolf/ConvertBooks](https://github.com/TheWickl
     environment:
       - desired_output_formats=.mobi,.epub,.azw3
     volumes:      
-      - /data/media/books:/convertbooks/source:ro
-      - /data/media/abs:/convertbooks/destination
+      - /data/media/ebooks:/convertbooks/source:ro
+      - /data/media/abs_books:/convertbooks/destination
 
 
 # Conclusion
