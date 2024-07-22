@@ -8,7 +8,7 @@ title: Full eBook Stack
 
 ## Services:
 
-- **Readarr** - used for structure, file names, and metadata.
+- **Readarr** - used for structure, file names and metadata.
 - **eBookBuddy** - used for discovering new books.
 - **BookBounty** - used for book retrieval.
 - **ConvertBooks** - used for book conversions.
