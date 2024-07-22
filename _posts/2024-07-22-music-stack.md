@@ -81,11 +81,13 @@ Each playlist added will have its own folder containing the individual songs. As
 Add `/data/media/music/managed` as a standard music library.  
 Add `/data/media/music/disorganized` as a separate music library but set it to prefer local metadata.  
 
-This way, singles and albums remain separated while still accessible.
+Both singles and albums are kept separate but they remain easily accessible.
 
 
 ## Conclusion
-This setup illustrates a music stack that effectively manages both albums and individual singles.
+This approach allows you to download singles without needing to download entire albums and helps keep the album collection organized. As a result, you have a well-maintained library for full albums and a separate library for individual singles. 
+
+This setup demonstrates an effective way to manage both albums and singles within your music stack.
 
 
 ## Example YAML Configuration
