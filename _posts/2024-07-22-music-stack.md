@@ -15,7 +15,7 @@ title: Full Music Stack
 	
 
 
-## Media Server and companinon apps
+## Media Server and companion apps
 - **Plex and Plexamp**
 - **Jellyfin and Finamp**
 
@@ -49,14 +49,14 @@ Lidatube will attempt to create the correct folder structure (e.g., /artist/albu
 
 Note:
 > Lidarr does not automatically rename files after import, and matching may not be perfect.  
-> Some tracks/albums will not be imported automatcially as there are differences in track length, metadata etc.
+> Some tracks/albums will not be imported automatically as there are differences in track length, metadata etc.
 
 > If you want an easy way to improve import matching, you have the option to disable fingerprinting. However, this approach may _potentially_ lead to incorrect imports.  
 > - Lidarr Settings -> Media Management -> Allow Fingerprinting -> Never  
     (with advanced options shown)  
 
 > It's recommended to review for unmapped files and use manual import where necessary.  
-> After importing, you can rename tracks using Lidarr's file rename function, if needed.  
+> After importing, you can rename tracks using Lidarr's file renaming function, if needed.  
 
 
 ## Lidify
@@ -78,8 +78,8 @@ Each playlist added will have its own folder containing the individual songs. As
 
 ## Media Servers
 
-Add `/data/media/music/managed` as a standard music library.
-Add `/data/media/music/disorganized` as a music library but set it to prefer local metadata.
+Add `/data/media/music/managed` as a standard music library.  
+Add `/data/media/music/disorganized` as a separate music library but set it to prefer local metadata.  
 
 This way, singles and albums remain separated while still accessible.
 
