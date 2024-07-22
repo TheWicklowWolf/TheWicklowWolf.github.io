@@ -3,7 +3,7 @@ layout: post
 title: Simplified eBook Stack
 ---
 
-![eBook-Stack]({{ site.baseurl }}/images/ebook-stack.png "eBook Stack")
+![eBook-Stack-Simplified]({{ site.baseurl }}/images/ebook-stack-simplified.png "eBook Stack")
 
 
 ## Services:
