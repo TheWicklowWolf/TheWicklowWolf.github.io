@@ -58,7 +58,7 @@ Use `/data/media/ebooks` as its books folder.
 > If using 587 or 25, you will need to disable the "Secure" toggle  
 > Set the "Username" to login  
 > Set the password  
-> If using Gmail, you will need to create an app password (https://support.google.com/mail/answer/185833) and use the app password in this field  
+> If using Gmail, you will need to create an app password [https://support.google.com/mail/answer/185833](https://support.google.com/mail/answer/185833) and use the app password in this field  
 > Enter the From Address. e.g. example@example.com
 
 **2. Add Kindle**
@@ -68,7 +68,7 @@ Use `/data/media/ebooks` as its books folder.
 
 **3. Ensure the From address is on the Approved Personal Document E-mail List**
 > Before sending, make sure the account you'll use is on your Approved Personal Document E-mail List in your Personal Document Settings.  
-> See https://www.amazon.com/sendtokindle/email  
+> See [https://www.amazon.com/sendtokindle/email](https://www.amazon.com/sendtokindle/email)
 
 ## Conclusion
 With ABS's "Send Ebook to Device" feature, you don't need multiple formats for each eBook. 
