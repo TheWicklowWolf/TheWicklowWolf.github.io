@@ -24,7 +24,7 @@ title: Full Music Stack
 ## Folder Structure
 
 `/data/media/music/managed` -> Used for Lidarr root folder.  
-`/data/media/music/disorganized` -> Used for Syncify to store playlists and individual singles.
+`/data/media/music/disorganized` -> Used for Syncify to store singles from playlists.
 
 
 ## Lidarr Setup
@@ -67,11 +67,12 @@ Default Settings.
 
 ## Syncify
 
+> Syncify is a tool for synchronising and fetching content from a Spotify playlist via yt-dlp.
 
 The downloads folder can be mapped to a location that is not managed by Lidarr:  
 `/data/media/music/disorganized:/syncify/downloads`
 
-Each Playlist added will have its own folder, containing the individual songs. 
+Each playlist added will have its own folder containing the individual songs. As this runs on a schedule, whenever you add a track to your Spotify playlist, it is retrieved by Syncify.
 
 
 
