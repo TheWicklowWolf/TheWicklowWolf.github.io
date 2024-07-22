@@ -55,15 +55,16 @@ Use `/data/media/ebooks` as its books folder.
 
 > Enter the Host (for example, smtp.gmail.com)  
 > Set the port (common ports include: 587, 465, 25)  
-> If using 587 or 25, you will need to disable the "Secure" toggle  
+> - If using 587 or 25, you will need to disable the "Secure" toggle
+>
 > Set the "Username" to login  
 > Set the password  
 > If using Gmail, you will need to create an app password [https://support.google.com/mail/answer/185833](https://support.google.com/mail/answer/185833) and use the app password in this field  
 > Enter the From Address. e.g. example@example.com
 
 **2. Add Kindle**
-> Add Device in Ereader Devices section
-> E-reader devices can only be added to ABS by an admin.
+> Select Add Device in Ereader Devices section.  
+> E-reader devices can only be added to ABS by an admin.  
 > Each e-reader device has a Name and an Email, where the Name is how the device will be displayed in ABS and the Email is the destination email address of the device.
 
 **3. Ensure the From address is on the Approved Personal Document E-mail List**
