@@ -73,7 +73,7 @@ Use `/data/media/ebooks` as its books folder.
 
 ## Conclusion
 With ABS's "Send Ebook to Device" feature, you don't need multiple formats for each eBook. 
-And once your Kindle is set up correctly, the book will automatically appear in the correct format.
+Once your Kindle is properly set up, the book will automatically be delivered in the correct format.
 
 ## Example YAML Configuration
 
