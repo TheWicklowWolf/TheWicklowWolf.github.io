@@ -40,3 +40,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+future: true
